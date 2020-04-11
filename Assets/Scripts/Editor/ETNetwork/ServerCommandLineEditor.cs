@@ -404,7 +404,7 @@ namespace Trinity.Editor
 				}
 
 				string arguments = $"App.dll --appId={startConfig.AppId} --appType={startConfig.AppType} --config=../Config/StartConfig/{this.fileName}";
-				ProcessHelper.Run("dotnet", arguments, "../Bin/");
+				ProcessHelper.Run("dotnet", arguments, "ETServer/Bin/");
 			}
 			GUILayout.EndHorizontal();
 		}
